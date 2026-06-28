@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Figure 3 - The two economies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <figure class="fig">
+      <div class="fig-head">
+        <div class="fig-num">Fig 3</div>
+        <div class="fig-title">The two economies - and the one nobody counts</div>
+        <div class="source">EUR trillion - 2023</div>
+      </div>
+      <div class="fig-body">
+        <svg class="chart" viewBox="0 0 900 390" role="img" aria-label="Bubble size comparison of 2023 German economic figures. Bubble area is proportional to euro trillions: domestic turnover 8.49, GDP 4.22, turnover abroad 3.39, and goods exports 1.56.">
+          <defs>
+            <pattern id="hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+              <rect width="8" height="8" fill="var(--oi-highlight)"/>
+              <line x1="0" y1="0" x2="0" y2="8" stroke="var(--oi-accent)" stroke-width="2" opacity="0.55"/>
+            </pattern>
+          </defs>
+
+          <text class="axis" x="450" y="30" text-anchor="middle">Bubble area = EUR trillion, 2023</text>
+
+          <circle cx="212" cy="192" r="120" fill="var(--oi-brand)"/>
+          <text class="tag white" x="212" y="154" text-anchor="middle">VISIBLE</text>
+          <text class="label white" x="212" y="182" text-anchor="middle">Domestic turnover</text>
+          <text class="small-value white" x="212" y="206" text-anchor="middle">EUR 8.49tn</text>
+          <text class="sub white" x="212" y="225" text-anchor="middle" opacity="0.76">all sales on German soil</text>
+
+          <circle cx="520" cy="137" r="85" fill="var(--oi-brand-2)"/>
+          <text class="tag white" x="520" y="110" text-anchor="middle">VISIBLE</text>
+          <text class="label white" x="520" y="137" text-anchor="middle">GDP</text>
+          <text class="small-value white" x="520" y="160" text-anchor="middle">EUR 4.22tn</text>
+          <text class="sub white" x="520" y="178" text-anchor="middle" opacity="0.76">value added</text>
+
+          <circle cx="695" cy="230" r="76" fill="url(#hatch)" stroke="var(--oi-accent)" stroke-width="2" stroke-dasharray="5 4"/>
+          <text class="tag" x="695" y="204" text-anchor="middle" fill="var(--oi-accent)">GHOST</text>
+          <text class="label" x="695" y="230" text-anchor="middle">Turnover abroad</text>
+          <text class="small-value" x="695" y="253" text-anchor="middle">EUR 3.39tn</text>
+          <text class="sub" x="695" y="271" text-anchor="middle">German-owned affiliates</text>
+
+          <circle cx="510" cy="283" r="51" fill="var(--oi-brand-2-soft)"/>
+          <text class="label white" x="510" y="281" text-anchor="middle">Exports</text>
+          <text class="small-value white" x="510" y="302" text-anchor="middle">EUR 1.56tn</text>
+
+          <line class="grid" x1="250" y1="354" x2="650" y2="354"/>
+          <text class="note" x="450" y="374" text-anchor="middle">Abroad turnover is 40% of domestic turnover, 2.2x goods exports, and about 80% of GDP.</text>
+        </svg>
+      </div>
+      <figcaption>Bubble areas are proportional to the 2023 EUR trillion values. All bubbles are gross turnover except GDP, which is value added. Do not add the visible and ghost bubbles: they overlap through intra-group sales. Sources: Destatis Umsatzsteuer, FRED GDP, Eurostat/Bundesbank Outward FATS, and Destatis foreign trade.</figcaption>
+    </figure>
+  </main>
+</body>
+</html>

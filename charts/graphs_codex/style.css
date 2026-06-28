@@ -1,0 +1,333 @@
+:root {
+  --oi-brand: #0b2545;
+  --oi-brand-soft: #13345f;
+  --oi-brand-line: #2f5790;
+  --oi-brand-2: #1b4332;
+  --oi-brand-2-soft: #245a44;
+  --oi-brand-2-line: #3e7a5f;
+  --oi-accent: #b08b3a;
+  --oi-highlight: #f1e6c4;
+  --oi-ink-1: #0a0f14;
+  --oi-ink-2: #2a3038;
+  --oi-ink-3: #5a6470;
+  --oi-ink-4: #98a1ad;
+  --oi-rule: #d8d3c4;
+  --oi-rule-strong: #0a0f14;
+  --oi-surface: #f6f4ef;
+  --oi-surface-2: #fbfaf6;
+  --oi-surface-sunk: #ecebe4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--oi-surface);
+  color: var(--oi-ink-1);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  padding: 36px 24px 72px;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.page-head {
+  border-bottom: 1px solid var(--oi-rule-strong);
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+}
+
+.eyebrow,
+.source,
+.tag,
+.axis,
+.fig-num {
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  color: var(--oi-brand-2);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 6px 0 0;
+  font-size: clamp(24px, 4vw, 34px);
+  line-height: 1.12;
+  font-weight: 650;
+}
+
+.link-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.link-list a {
+  display: block;
+  border: 1px solid var(--oi-rule);
+  background: var(--oi-surface-2);
+  color: var(--oi-ink-1);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.fig {
+  margin: 0;
+}
+
+.fig-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--oi-rule);
+  padding-bottom: 12px;
+}
+
+.fig-num {
+  color: var(--oi-ink-3);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+}
+
+.fig-title {
+  color: var(--oi-ink-1);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.source {
+  color: var(--oi-ink-3);
+  font-size: 10px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.fig-body {
+  border: 1px solid var(--oi-rule);
+  border-top: 0;
+  background: var(--oi-surface);
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(6, 26, 53, 0.05), 0 10px 30px -16px rgba(6, 26, 53, 0.1);
+}
+
+figcaption {
+  max-width: 760px;
+  margin-top: 12px;
+  color: var(--oi-ink-3);
+  font-size: 13px;
+  line-height: 1.48;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  margin: 0 0 16px;
+  color: var(--oi-ink-3);
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.swatch {
+  width: 18px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 1px;
+  background: currentColor;
+}
+
+.line-swatch {
+  width: 22px;
+  height: 0;
+  border-top: 3px solid currentColor;
+}
+
+.dash-swatch {
+  width: 22px;
+  height: 0;
+  border-top: 3px dashed currentColor;
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chart .grid {
+  stroke: var(--oi-rule);
+  stroke-width: 1;
+}
+
+.chart .axis-line {
+  stroke: var(--oi-rule-strong);
+  stroke-width: 1.1;
+}
+
+.chart .axis {
+  fill: var(--oi-ink-3);
+  font-size: 11px;
+}
+
+.chart .label {
+  fill: var(--oi-ink-1);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.chart .sub {
+  fill: var(--oi-ink-3);
+  font-size: 10.5px;
+}
+
+.chart .value {
+  fill: var(--oi-ink-1);
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart .small-value {
+  fill: var(--oi-ink-2);
+  font-size: 12px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart .note {
+  fill: var(--oi-ink-3);
+  font-size: 11px;
+}
+
+.chart .tag {
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.chart .white {
+  fill: #fff;
+}
+
+.chart .navy {
+  fill: var(--oi-brand);
+}
+
+.chart .forest {
+  fill: var(--oi-brand-2);
+}
+
+.chart .ochre {
+  fill: var(--oi-accent);
+}
+
+.chart .hatch {
+  fill: url(#hatch);
+}
+
+.chart .turn-line {
+  fill: none;
+  stroke: var(--oi-brand-soft);
+  stroke-width: 2.8;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.chart .gdp-line {
+  fill: none;
+  stroke: var(--oi-brand-2-line);
+  stroke-width: 2.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.chart .abt-line {
+  fill: none;
+  stroke: var(--oi-accent);
+  stroke-width: 3.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.chart .abe-line {
+  fill: none;
+  stroke: var(--oi-accent);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.chart .dom-line {
+  fill: none;
+  stroke: var(--oi-brand-soft);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.chart .exp-line {
+  fill: none;
+  stroke: var(--oi-brand-2-soft);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.chart .gdp-index-line {
+  fill: none;
+  stroke: var(--oi-brand-line);
+  stroke-width: 1.8;
+  stroke-dasharray: 6 5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.chart .jobs-line {
+  fill: none;
+  stroke: var(--oi-ink-4);
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+@media (max-width: 680px) {
+  body {
+    padding: 24px 12px 48px;
+  }
+
+  .fig-head {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .source {
+    text-align: left;
+  }
+
+  .fig-body {
+    padding: 14px;
+  }
+}

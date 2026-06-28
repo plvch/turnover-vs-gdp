@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Figure 1 - Gross output vs value added</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <figure class="fig">
+      <div class="fig-head">
+        <div class="fig-num">Fig 1</div>
+        <div class="fig-title">Gross output vs value added - why turnover is about 2x GDP</div>
+        <div class="source">Schematic - anchored 2023</div>
+      </div>
+      <div class="fig-body">
+        <div class="legend">
+          <span style="color: var(--oi-accent)"><i class="swatch"></i>margin, counted in GDP</span>
+          <span style="color: var(--oi-ink-4)"><i class="swatch" style="background: var(--oi-surface-sunk); border: 1px solid var(--oi-rule)"></i>bought-in inputs</span>
+          <span style="color: var(--oi-brand)"><i class="line-swatch"></i>full sale, counted in turnover</span>
+        </div>
+        <svg class="chart" viewBox="0 0 900 380" role="img" aria-label="A four-stage supply chain shows turnover counting every full sale and GDP counting only each stage's margin. Sales sum to EUR 80k and margins sum to EUR 40k, a two times gap.">
+          <text class="note" x="230" y="30">Each row is one sale. Ochre is the new value added at that stage; grey was already bought from upstream.</text>
+
+          <text class="label" x="212" y="72" text-anchor="end">Steel &amp; raw materials</text>
+          <rect x="230" y="54" width="0" height="24" fill="var(--oi-surface-sunk)" stroke="var(--oi-rule)"/>
+          <rect x="230.0" y="54" width="38.2" height="24" fill="var(--oi-accent)"/>
+          <rect x="230" y="54" width="38.2" height="24" fill="none" stroke="var(--oi-brand-soft)" stroke-width="1.4"/>
+          <text class="value" x="279" y="71">&euro;4k</text>
+
+          <text class="label" x="212" y="118" text-anchor="end">Parts &amp; components</text>
+          <rect x="230" y="100" width="38.2" height="24" fill="var(--oi-surface-sunk)" stroke="var(--oi-rule)"/>
+          <rect x="268.2" y="100" width="57.3" height="24" fill="var(--oi-accent)"/>
+          <rect x="230" y="100" width="95.6" height="24" fill="none" stroke="var(--oi-brand-soft)" stroke-width="1.4"/>
+          <text class="value" x="336" y="117">&euro;10k</text>
+
+          <text class="label" x="212" y="164" text-anchor="end">Carmaker - assembly</text>
+          <rect x="230" y="146" width="95.6" height="24" fill="var(--oi-surface-sunk)" stroke="var(--oi-rule)"/>
+          <rect x="325.6" y="146" width="152.9" height="24" fill="var(--oi-accent)"/>
+          <rect x="230" y="146" width="248.4" height="24" fill="none" stroke="var(--oi-brand-soft)" stroke-width="1.4"/>
+          <text class="value" x="489" y="163">&euro;26k</text>
+
+          <text class="label" x="212" y="210" text-anchor="end">Dealer - retail</text>
+          <rect x="230" y="192" width="248.4" height="24" fill="var(--oi-surface-sunk)" stroke="var(--oi-rule)"/>
+          <rect x="478.4" y="192" width="133.8" height="24" fill="var(--oi-accent)"/>
+          <rect x="230" y="192" width="382.2" height="24" fill="none" stroke="var(--oi-brand-soft)" stroke-width="1.4"/>
+          <text class="value" x="623" y="209">&euro;40k</text>
+
+          <line class="grid" x1="230" y1="232" x2="660" y2="232"/>
+          <text class="axis" x="230" y="248" text-anchor="middle">0</text>
+          <text class="axis" x="325.6" y="248" text-anchor="middle">10</text>
+          <text class="axis" x="421.1" y="248" text-anchor="middle">20</text>
+          <text class="axis" x="516.7" y="248" text-anchor="middle">30</text>
+          <text class="axis" x="612.2" y="248" text-anchor="middle">40</text>
+          <text class="axis" x="682" y="248" text-anchor="start">&euro;k per car</text>
+
+          <line class="axis-line" x1="230" y1="270" x2="660" y2="270"/>
+          <text class="tag axis" x="212" y="274" text-anchor="end">Totals</text>
+
+          <text class="label" x="212" y="306" text-anchor="end">TURNOVER</text>
+          <rect x="230" y="288" width="382.2" height="26" fill="var(--oi-brand)"/>
+          <text class="small-value white" x="242" y="306">&euro;80k - every sale, summed</text>
+
+          <text class="label" x="212" y="344" text-anchor="end">GDP</text>
+          <rect x="230" y="326" width="191.1" height="26" fill="var(--oi-brand-2)"/>
+          <text class="small-value white" x="242" y="344">&euro;40k - margins only</text>
+          <text x="650" y="329" fill="var(--oi-accent)" font-size="28" font-weight="750">= 2x</text>
+          <text class="note" x="650" y="348">same car, different accounting</text>
+        </svg>
+      </div>
+      <figcaption>Turnover records the full price at each handoff. GDP keeps only the margin each step adds. The four illustrative sales sum to EUR 80k; the four margins sum to EUR 40k. The 2023 whole-economy anchor is similar: domestic turnover EUR 8.49tn vs GDP EUR 4.22tn, or 2.01x. Stage values are schematic.</figcaption>
+    </figure>
+  </main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Figure 5 - Firm anatomy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <figure class="fig">
+      <div class="fig-head">
+        <div class="fig-num">Fig 5</div>
+        <div class="fig-title">One firm, cut in half at the border</div>
+        <div class="source">Schematic - carmaker value chain</div>
+      </div>
+      <div class="fig-body">
+        <svg class="chart" viewBox="0 0 900 380" role="img" aria-label="A carmaker value chain split by the national border. Home activities are visible to German GDP, turnover and exports. Abroad activities are invisible to German GDP and counted only in foreign affiliate statistics and host GDP.">
+          <defs>
+            <marker id="arrow-dark" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="var(--oi-ink-2)"/>
+            </marker>
+            <marker id="arrow-accent" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="var(--oi-accent)"/>
+            </marker>
+          </defs>
+
+          <text class="tag" x="190" y="32" text-anchor="middle" fill="var(--oi-brand)">HOME</text>
+          <text class="sub" x="190" y="50" text-anchor="middle">visible to German GDP - turnover - exports</text>
+          <text class="tag" x="710" y="32" text-anchor="middle" fill="var(--oi-accent)">ABROAD</text>
+          <text class="sub" x="710" y="50" text-anchor="middle">only in Foreign Affiliate Statistics and host GDP</text>
+
+          <line x1="450" y1="64" x2="450" y2="350" stroke="var(--oi-rule-strong)" stroke-width="1.2" stroke-dasharray="4 5"/>
+          <text class="tag" x="450" y="58" text-anchor="middle" fill="var(--oi-ink-3)">NATIONAL BORDER</text>
+
+          <rect x="40" y="86" width="300" height="44" rx="3" fill="var(--oi-brand)"/>
+          <text class="label white" x="56" y="114">Design &amp; engineering</text>
+          <text class="tag" x="324" y="104" text-anchor="end" fill="rgba(255,255,255,0.78)">VISIBLE</text>
+
+          <rect x="40" y="142" width="300" height="44" rx="3" fill="var(--oi-brand)"/>
+          <text class="label white" x="56" y="170">IP &amp; patents</text>
+          <text class="tag" x="324" y="160" text-anchor="end" fill="rgba(255,255,255,0.78)">VISIBLE</text>
+
+          <rect x="40" y="198" width="300" height="44" rx="3" fill="var(--oi-brand-2)"/>
+          <text class="label white" x="56" y="226">Hard components &amp; materials</text>
+          <text class="tag" x="324" y="216" text-anchor="end" fill="rgba(255,255,255,0.78)">VISIBLE</text>
+
+          <rect x="40" y="270" width="300" height="44" rx="3" fill="var(--oi-brand-2)"/>
+          <text class="label white" x="56" y="298">HQ &amp; offices</text>
+          <text class="tag" x="324" y="288" text-anchor="end" fill="rgba(255,255,255,0.78)">VISIBLE</text>
+
+          <rect x="560" y="92" width="300" height="62" rx="3" fill="var(--oi-highlight)" stroke="var(--oi-accent)" stroke-width="1.6"/>
+          <text class="tag" x="858" y="84" text-anchor="end" fill="var(--oi-accent)">INVISIBLE</text>
+          <text class="label" x="576" y="119">Assembly / volume manufacturing</text>
+          <text class="sub" x="576" y="139">the hands, in a firm-owned plant</text>
+
+          <rect x="560" y="232" width="300" height="62" rx="3" fill="var(--oi-highlight)" stroke="var(--oi-accent)" stroke-width="1.6"/>
+          <text class="tag" x="858" y="224" text-anchor="end" fill="var(--oi-accent)">INVISIBLE</text>
+          <text class="label" x="576" y="259">Finished car - built &amp; sold abroad</text>
+          <text class="sub" x="576" y="279">in no German trade data at all</text>
+
+          <path d="M344,108 L414,146" fill="none" stroke="var(--oi-ink-2)" stroke-width="1.9" stroke-linecap="round" opacity="0.78"/>
+          <path d="M344,164 L414,146" fill="none" stroke="var(--oi-ink-2)" stroke-width="2.3" stroke-linecap="round" opacity="0.88"/>
+          <path d="M344,220 L414,146" fill="none" stroke="var(--oi-ink-2)" stroke-width="2.7" stroke-linecap="round"/>
+          <circle cx="414" cy="146" r="3.3" fill="var(--oi-ink-2)"/>
+          <path d="M414,146 L556,124" fill="none" stroke="var(--oi-ink-2)" stroke-width="3.2" stroke-linecap="round" marker-end="url(#arrow-dark)"/>
+          <rect x="360" y="72" width="180" height="36" rx="2" fill="var(--oi-surface)"/>
+          <text class="small-value" x="450" y="86" text-anchor="middle">design - IP - components</text>
+          <text class="note" x="450" y="101" text-anchor="middle">counted at home</text>
+
+          <path d="M710,154 L710,228" fill="none" stroke="var(--oi-accent)" stroke-width="2" marker-end="url(#arrow-accent)"/>
+          <text class="note" x="724" y="195">built locally</text>
+
+          <path d="M556,306 C486,336 416,320 344,292" fill="none" stroke="var(--oi-accent)" stroke-width="1.7" stroke-dasharray="5 4" marker-end="url(#arrow-accent)"/>
+          <rect x="302" y="332" width="306" height="28" rx="2" fill="var(--oi-surface)"/>
+          <text class="small-value" x="455" y="350" text-anchor="middle" fill="var(--oi-accent)">income returns to HQ - net ~EUR 70bn (2023)</text>
+        </svg>
+      </div>
+      <figcaption>Conceptual schematic. The home side is visible to German GDP, turnover and exports. The abroad side belongs to host-country GDP and outward FATS. The connective tissue is intra-firm trade; the direct-investment income that returns to Germany is much smaller than the foreign operating footprint.</figcaption>
+    </figure>
+  </main>
+</body>
+</html>

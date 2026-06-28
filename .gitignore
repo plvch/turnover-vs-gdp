@@ -1,0 +1,17 @@
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
+
+# scratch chart renders
+figpngs/
+
+# Large GENESIS sectoral flat files (~104MB) — used once for the 2021 financial-sector
+# break decomposition. The derived series and results are committed (data/*.csv,
+# SPINE.md, NOTES.md). Re-export from Destatis GENESIS 73321-0002 / 73311-0002 to
+# re-run build_series.py / build_voran_series.py from scratch.
+data/turnover_73321/0002/
+data/turnover_73311/0002/
+
+# raw download archives
+*.zip
